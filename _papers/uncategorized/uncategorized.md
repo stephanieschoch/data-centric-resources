@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Data-Efficient Training
+title: Currently Uncategorized
 nav_order: 3
 has_children: false
 has_toc: false
-permalink: ./data-efficient-training.html
 ---
 
-# Data-Efficient Training
+# Currently Uncategorized
+Contains papers that will be moved to other sections as the repository continues to be developed.
 
 ## Papers
 <details><summary><b>Coresets for Data-efficient Training of Machine Learning Models</b>
