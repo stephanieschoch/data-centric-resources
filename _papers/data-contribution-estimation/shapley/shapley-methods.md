@@ -1,11 +1,12 @@
 ---
-layout: page
+layout: default
 title: Shapley Methods
-parent: Data Contribution Estimation
-nav_order: 1
+parent: Shapley Values
+grand_parent: Data Contribution Estimation
+nav_order: 2
 ---
 
-## Shapley-Methods
+## Shapley-based Methods for Data Contribution Estimation
 {: .no_toc }
 
 <!--

@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Other Methods
-parent: Data Contribution Estimation
-nav_order: 3
+parent: Other
+grand_parent: Data Contribution Estimation
+nav_order: 2
 ---
 
-## Other-Methods
+## Other Methods for Data Contribution Estimation
 {: .no_toc }
 
 <!--
