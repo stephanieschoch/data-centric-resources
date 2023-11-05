@@ -2,8 +2,8 @@
 layout: default
 title: Data-Efficient Training
 nav_order: 3
-has_children: true
-has_toc: true
+has_children: false
+has_toc: false
 permalink: ./data-efficient-training.html
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Data Contribution Estimation
-nav_order: 2
+nav_order: 1
 ---
 
 # Additional Resources for Data Contribution Estimation
