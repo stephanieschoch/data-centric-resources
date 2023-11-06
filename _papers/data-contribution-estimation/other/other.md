@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Other
+title: Other Approaches
 parent: Data Contribution Estimation
 nav_order: 3
 has_children: true

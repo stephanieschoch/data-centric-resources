@@ -191,22 +191,20 @@ nav_order: 2
 </details>
 
 
-### 2018
+### 2019
 
-
-### 2017
-<details><summary><b>TITLE</b> 
+<details><summary><b>On the Accuracy of Influence Functions for Measuring Group Effects</b> 
 <br>
-&emsp;<i>AUTHORS</i>
+&emsp;<i>Pang Wei Koh, Kai-Siang Ang, Hubert H. K. Teo, Percy Liang</i>
 <br>
-&emsp;<i>VENUE</i>
+&emsp;<i>Advances in Neural Information Processing Systems (NeurIPS), 2019</i>
 <br>&emsp;
-[<a target="_blank" rel="noopener noreferrer" href="">Paper</a>]
-[<a target="_blank" rel="noopener noreferrer" href="">Code</a>]
+[<a target="_blank" rel="noopener noreferrer" href="https://openreview.net/forum?id=HJentVSgUB">Paper</a>]
+[<a target="_blank" rel="noopener noreferrer" href="https://github.com/kohpangwei/group-influence-release">Code</a>]
 <br>
 <br>
 </summary>
-  <blockquote> <b>Abstract:</b> TEXT
+  <blockquote> <b>Abstract:</b> Influence functions estimate the effect of removing a training point on a model without the need to retrain. They are based on a first-order Taylor approximation that is guaranteed to be accurate for sufficiently small changes to the model, and so are commonly used to study the effect of individual points in large datasets. However, we often want to study the effects of large groups of training points, e.g., to diagnose batch effects or apportion credit between different data sources. Removing such large groups can result in significant changes to the model. Are influence functions still accurate in this setting? In this paper, we find that across many different types of groups and for a range of real-world datasets, the predicted effect (using influence functions) of a group correlates surprisingly well with its actual effect, even if the absolute and relative errors are large. Our theoretical analysis shows that such strong correlation arises only under certain settings and need not hold in general, indicating that real-world datasets have particular properties that allow the influence approximation to be accurate.
 <br><br>
 
 <!--
@@ -216,10 +214,63 @@ nav_order: 2
 
 <details><summary><b>Bibtex</b></summary>
 {% raw %}
-<pre><code> BIBTEX
+<pre><code> @article{koh2019accuracy,
+  title={On the accuracy of influence functions for measuring group effects},
+  author={Koh, Pang Wei W and Ang, Kai-Siang and Teo, Hubert and Liang, Percy S},
+  journal={Advances in neural information processing systems},
+  volume={32},
+  year={2019}
+}</code></pre>
+{% endraw %}
+</details>
+</blockquote>
+</details>
+
+
+
+### 2018
+
+
+### 2017
+<details><summary><b>Understanding Black-box Predictions via Influence Functions</b> 
+<br>
+&emsp;<i>Pang Wei Koh, Percy Liang</i>
+<br>
+&emsp;<i>Proceedings of the 34th International Conference on Machine Learning (ICML), 2017</i>
+<br>&emsp;
+[<a target="_blank" rel="noopener noreferrer" href="https://proceedings.mlr.press/v70/koh17a">Paper</a>]
+[<a target="_blank" rel="noopener noreferrer" href="https://github.com/kohpangwei/influence-release">Code</a>]
+<br>
+<br>
+</summary>
+  <blockquote> <b>Abstract:</b> How can we explain the predictions of a black-box model? In this paper, we use influence functions — a classic technique from robust statistics — to trace a model’s prediction through the learning algorithm and back to its training data, thereby identifying training points most responsible for a given prediction. To scale up influence functions to modern machine learning settings, we develop a simple, efficient implementation that requires only oracle access to gradients and Hessian-vector products. We show that even on non-convex and non-differentiable models where the theory breaks down, approximations to influence functions can still provide valuable information. On linear models and convolutional neural networks, we demonstrate that influence functions are useful for multiple purposes: understanding model behavior, debugging models, detecting dataset errors, and even creating visually-indistinguishable training-set attacks.
+<br><br>
+
+<!--
+<details><summary><b>Notes</b></summary>TEXT
+<br><br></details>
+-->
+
+<details><summary><b>Bibtex</b></summary>
+{% raw %}
+<pre><code> 
+@InProceedings{pmlr-v70-koh17a,
+  title = 	 {Understanding Black-box Predictions via Influence Functions},
+  author =       {Pang Wei Koh and Percy Liang},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {1885--1894},
+  year = 	 {2017},
+  editor = 	 {Precup, Doina and Teh, Yee Whye},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--11 Aug},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v70/koh17a/koh17a.pdf},
+  url = 	 {https://proceedings.mlr.press/v70/koh17a.html}}
 </code></pre>
 {% endraw %}
 </details>
 </blockquote>
 </details>
+
 

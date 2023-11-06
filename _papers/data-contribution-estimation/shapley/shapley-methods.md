@@ -200,6 +200,42 @@ url={https://openreview.net/forum?id=KTOcrOR5mQ9}
 </blockquote>
 </details>
 
+
+<details><summary><b>Gradient Driven Rewards to Guarantee Fairness in Collaborative Machine Learning
+</b> 
+<br>
+&emsp;<i>Xinyi Xu, Lingjuan Lyu, Xingjun Ma, Chenglin Miao, Chuan Sheng Foo, Bryan Kian Hsiang Low</i>
+<br>
+&emsp;<i>Advances in Neural Information Processing Systems 34 (NeurIPS), 2021</i>
+<br>&emsp;
+[<a target="_blank" rel="noopener noreferrer" href="https://proceedings.neurips.cc/paper/2021/hash/8682cc30db9c025ecd3fee433f8ab54c-Abstract.html">Paper</a>]
+[<a target="_blank" rel="noopener noreferrer" href="https://github.com/XinyiYS/Gradient-Driven-Rewards-to-Guarantee-Fairness-in-Collaborative-Machine-Learning">Code</a>]
+<br>
+<br>
+</summary>
+  <blockquote> <b>Abstract:</b> In collaborative machine learning(CML), multiple agents pool their resources(e.g., data) together for a common learning task. In realistic CML settings where the agents are self-interested and not altruistic, they may be unwilling to share data or model information without adequate rewards. Furthermore, as the data/model information shared by the agents may differ in quality, designing rewards which are fair to them is important so that they would not feel exploited nor discouraged from sharing. In this paper, we adopt federated learning as the CML paradigm, propose a novel cosine gradient Shapley value(CGSV) to fairly evaluate the expected marginal contribution of each agent’s uploaded model parameter update/gradient without needing an auxiliary validation dataset, and based on the CGSV, design a novel training-time gradient reward mechanism with a fairness guarantee by sparsifying the aggregated parameter update/gradient downloaded from the server as reward to each agent such that its resulting quality is commensurate to that of the agent’s uploaded parameter update/gradient. We empirically demonstrate the effectiveness of our fair gradient reward mechanism on multiple benchmark datasets in terms of fairness, predictive performance, and time overhead.
+<br><br>
+
+<!--
+<details><summary><b>Notes</b></summary>TEXT
+<br><br></details>
+-->
+
+<details><summary><b>Bibtex</b></summary>
+{% raw %}
+<pre><code> @article{xu2021gradient,
+  title={Gradient driven rewards to guarantee fairness in collaborative machine learning},
+  author={Xu, Xinyi and Lyu, Lingjuan and Ma, Xingjun and Miao, Chenglin and Foo, Chuan Sheng and Low, Bryan Kian Hsiang},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={16104--16117},
+  year={2021}
+}</code></pre>
+{% endraw %}
+</details>
+</blockquote>
+</details>
+
 ### 2020
 <a id="2020-shapley"></a>
 
@@ -317,6 +353,39 @@ url={https://openreview.net/forum?id=KTOcrOR5mQ9}
   url = 	 {https://proceedings.mlr.press/v89/jia19a.html}
 }
 </code></pre>
+{% endraw %}
+</details>
+</blockquote>
+</details>
+
+
+<details><summary><b>Efficient Task-Specific Data Valuation for Nearest Neighbor Algorithms</b> 
+<br>
+&emsp;<i>Ruoxi Jia, David Dao, Boxin Wang, Frances Ann Hubis, Nezihe Merve Gurel, Bo Li, Ce Zhang, Costas J. Spanos, Dawn Song</i>
+<br>
+&emsp;<i>Proceedings of the VLDB Endowment, 2019</i>
+<br>&emsp;
+[<a target="_blank" rel="noopener noreferrer" href="https://vldb.org/pvldb/vol12/p1610-jia.pdf">Paper</a>]
+<br>
+<br>
+</summary>
+  <blockquote> <b>Abstract:</b> Given a data set  containing millions of data points and a data consumer who is willing to pay for $X to train a machine learning (ML) model over , how should we distribute this $X to each data point to reflect its "value"? In this paper, we define the "relative value of data" via the Shapley value, as it uniquely possesses properties with appealing real-world interpretations, such as fairness, rationality and decentralizability. For general, bounded utility functions, the Shapley value is known to be challenging to compute: to get Shapley values for all N data points, it requires O(2N) model evaluations for exact computation and O(NlogN) for (ϵ,δ)-approximation. In this paper, we focus on one popular family of ML models relying on K-nearest neighbors (KNN). The most surprising result is that for unweighted KNN classifiers and regressors, the Shapley value of all N data points can be computed, exactly, in O(NlogN) time -- an exponential improvement on computational complexity! Moreover, for (ϵ,δ)-approximation, we are able to develop an algorithm based on Locality Sensitive Hashing (LSH) with only sublinear complexity O(Nh(ϵ,K)logN) when ϵ is not too small and K is not too large. We empirically evaluate our algorithms on up to 10 million data points and even our exact algorithm is up to three orders of magnitude faster than the baseline approximation algorithm. The LSH-based approximation algorithm can accelerate the value calculation process even further. We then extend our algorithms to other scenarios such as (1) weighed KNN classifiers, (2) different data points are clustered by different data curators, and (3) there are data analysts providing computation who also requires proper valuation.
+<br><br>
+
+<!--
+<details><summary><b>Notes</b></summary>TEXT
+<br><br></details>
+-->
+
+<details><summary><b>Bibtex</b></summary>
+{% raw %}
+<pre><code> @article{jia12efficient,
+  title={Efficient Task-Specific Data Valuation for Nearest Neighbor Algorithms},
+  author={Jia, Ruoxi and Dao, David and Wang, Boxin and Hubis, Frances Ann and Gurel, Nezihe Merve and Zhang, Bo Li4 Ce and Song, Costas Spanos1 Dawn},
+  journal={Proceedings of the VLDB Endowment},
+  volume={12},
+  number={11}
+}</code></pre>
 {% endraw %}
 </details>
 </blockquote>

@@ -51,3 +51,41 @@ nav_order: 3
 </details>
 </blockquote>
 </details>
+
+
+### 2021
+
+<details><summary><b>Data valuation for medical imaging using Shapley value and application to a large-scale chest X-ray dataset</b> 
+<br>
+&emsp;<i>Siyi Tang, Amirata Ghorbani, Rikiya Yamashita, Sameer Rehman, Jared A. Dunnmon, James Zou & Daniel L. Rubin</i>
+<br>
+&emsp;<i>Nature Scientific Reports, 2021</i>
+<br>&emsp;
+[<a target="_blank" rel="noopener noreferrer" href="https://www.nature.com/articles/s41598-021-87762-2">Paper</a>]
+<br>
+<br>
+</summary>
+  <blockquote> <b>Abstract:</b> The reliability of machine learning models can be compromised when trained on low quality data. Many large-scale medical imaging datasets contain low quality labels extracted from sources such as medical reports. Moreover, images within a dataset may have heterogeneous quality due to artifacts and biases arising from equipment or measurement errors. Therefore, algorithms that can automatically identify low quality data are highly desired. In this study, we used data Shapley, a data valuation metric, to quantify the value of training data to the performance of a pneumonia detection algorithm in a large chest X-ray dataset. We characterized the effectiveness of data Shapley in identifying low quality versus valuable data for pneumonia detection. We found that removing training data with high Shapley values decreased the pneumonia detection performance, whereas removing data with low Shapley values improved the model performance. Furthermore, there were more mislabeled examples in low Shapley value data and more true pneumonia cases in high Shapley value data. Our results suggest that low Shapley value indicates mislabeled or poor quality images, whereas high Shapley value indicates data that are valuable for pneumonia detection. Our method can serve as a framework for using data Shapley to denoise large-scale medical imaging datasets.
+<br><br>
+
+<!--
+<details><summary><b>Notes</b></summary>TEXT
+<br><br></details>
+-->
+
+<details><summary><b>Bibtex</b></summary>
+{% raw %}
+<pre><code> @article{tang2021data,
+  title={Data valuation for medical imaging using Shapley value and application to a large-scale chest X-ray dataset},
+  author={Tang, Siyi and Ghorbani, Amirata and Yamashita, Rikiya and Rehman, Sameer and Dunnmon, Jared A and Zou, James and Rubin, Daniel L},
+  journal={Scientific reports},
+  volume={11},
+  number={1},
+  pages={8366},
+  year={2021},
+  publisher={Nature Publishing Group UK London}
+}</code></pre>
+{% endraw %}
+</details>
+</blockquote>
+</details>
