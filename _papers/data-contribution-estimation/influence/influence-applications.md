@@ -8,7 +8,68 @@ nav_order: 3
 
 ## Applications of Influence-based Data Contribution Estimation
 
+### 2023
+
+<details><summary><b>Studying Large Language Model Generalization with Influence Functions</b> <br>
+&emsp;<i>Roger Grosse, Juhan Bae, Cem Anil, Nelson Elhage, Alex Tamkin, Amirhossein Tajdini, Benoit Steiner, Dustin Li, Esin Durmus, Ethan Perez, Evan Hubinger, Kamilė Lukošiūtė, Karina Nguyen, Nicholas Joseph, Sam McCandlish, Jared Kaplan, Samuel R. Bowman</i><br>
+&emsp;<i>arXiv, 2023</i><br>&emsp;
+[<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2308.03296">Paper</a>]
+[<a target="_blank" rel="noopener noreferrer" href="https://www.anthropic.com/index/influence-functions">Blog</a>]
+<br><br></summary>
+
+<blockquote> <b>Abstract:</b> When trying to gain better visibility into a machine learning model in order to understand and mitigate the associated risks, a potentially valuable source of evidence is: which training examples most contribute to a given behavior? Influence functions aim to answer a counterfactual: how would the model's parameters (and hence its outputs) change if a given sequence were added to the training set? While influence functions have produced insights for small models, they are difficult to scale to large language models (LLMs) due to the difficulty of computing an inverse-Hessian-vector product (IHVP). We use the Eigenvalue-corrected Kronecker-Factored Approximate Curvature (EK-FAC) approximation to scale influence functions up to LLMs with up to 52 billion parameters. In our experiments, EK-FAC achieves similar accuracy to traditional influence function estimators despite the IHVP computation being orders of magnitude faster. We investigate two algorithmic techniques to reduce the cost of computing gradients of candidate training sequences: TF-IDF filtering and query batching. We use influence functions to investigate the generalization patterns of LLMs, including the sparsity of the influence patterns, increasing abstraction with scale, math and programming abilities, cross-lingual generalization, and role-playing behavior. Despite many apparently sophisticated forms of generalization, we identify a surprising limitation: influences decay to near-zero when the order of key phrases is flipped. Overall, influence functions give us a powerful new tool for studying the generalization properties of LLMs.
+<br><br>
+
+<!--
+<details><summary><b>Notes</b></summary>TEXT
+<br><br></details>
+-->
+
+<details><summary><b>Bibtex</b></summary>
+{% raw %}
+<pre><code> @article{grosse2023studying,
+  title={Studying large language model generalization with influence functions},
+  author={Grosse, Roger and Bae, Juhan and Anil, Cem and Elhage, Nelson and Tamkin, Alex and Tajdini, Amirhossein and Steiner, Benoit and Li, Dustin and Durmus, Esin and Perez, Ethan and others},
+  journal={arXiv preprint arXiv:2308.03296},
+  year={2023}
+} </code></pre>
+{% endraw %}
+</details>
+
+</blockquote></details>
+
 ### 2022
+<details><summary><b>First is Better Than Last for Language Data Influence</b> <br>
+&emsp;<i>Chih-Kuan Yeh, Ankur Taly, Mukund Sundararajan, Frederick Liu, Pradeep Kumar Ravikumar</i><br>
+&emsp;<i>Advances in Neural Information Processing Systems (NeurIPS), 2022</i><br>&emsp;
+[<a target="_blank" rel="noopener noreferrer" href="https://openreview.net/forum?id=yfrDD_rmD5">Paper</a>]
+[<a target="_blank" rel="noopener noreferrer" href="https://github.com/chihkuanyeh/TracIn-WE">Code</a>]
+<br><br></summary>
+
+<blockquote> <b>Abstract:</b> The ability to identify influential training examples enables us to debug training data and explain model behavior. Existing techniques to do so are based on the flow of training data influence through the model parameters. For large models in NLP applications, it is often computationally infeasible to study this flow through all model parameters, therefore techniques usually pick the last layer of weights. However, we observe that since the activation connected to the last layer of weights contains "shared logic", the data influenced calculated via the last layer weights prone to a "cancellation effect", where the data influence of different examples have large magnitude that contradicts each other. The cancellation effect lowers the discriminative power of the influence score, and deleting influential examples according to this measure often does not change the model's behavior by much. To mitigate this, we propose a technique called TracIn-WE that modifies a method called TracIn to operate on the word embedding layer instead of the last layer, where the cancellation effect is less severe. One potential concern is that influence based on the word embedding layer may not encode sufficient high level information.  However, we find that gradients (unlike embeddings) do not suffer from this, possibly because they chain through higher layers. We show that TracIn-WE significantly outperforms other data influence methods applied on the last layer significantly on the case deletion evaluation on three language classification tasks for different models. In addition, TracIn-WE can produce scores not just at the level of the overall training input, but also at the level of words within the training input, a further aid in debugging. 
+<br><br>
+
+<!--
+<details><summary><b>Notes</b></summary>TEXT
+<br><br></details>
+-->
+
+<details><summary><b>Bibtex</b></summary>
+{% raw %}
+<pre><code> @inproceedings{
+yeh2022first,
+title={First is Better Than Last for Language Data Influence},
+author={Chih-Kuan Yeh and Ankur Taly and Mukund Sundararajan and Frederick Liu and Pradeep Kumar Ravikumar},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=yfrDD_rmD5}
+} </code></pre>
+{% endraw %}
+</details>
+</blockquote></details>
+
+
 <details><summary><b>Resolving Training Biases via Influence-based Data Relabeling</b> 
 <br>
 &emsp;<i>Shuming Kong, Yanyan Shen, Linpeng Huang</i>

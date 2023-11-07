@@ -79,6 +79,43 @@ nav_order: 2
 </details>
 
 
+<details><summary><b>Influence Functions in Deep Learning Are Fragile </b> 
+<br>
+&emsp;<i>Samyadeep Basu, Phil Pope, Soheil Feizi</i>
+<br>
+&emsp;<i>International Conference on Learning Representations (ICLR), 2021</i>
+<br>&emsp;
+[<a target="_blank" rel="noopener noreferrer" href="https://openreview.net/forum?id=xHKVVHGDOEk">Paper</a>]
+<!--
+[<a target="_blank" rel="noopener noreferrer" href="">Code</a>]
+-->
+<br>
+<br>
+</summary>
+  <blockquote> <b>Abstract:</b> Influence functions approximate the effect of training samples in test-time predictions and have a wide variety of applications in machine learning interpretability and uncertainty estimation. A commonly-used (first-order) influence function can be implemented efficiently as a post-hoc method requiring access only to the gradients and Hessian of the model. For linear models, influence functions are well-defined due to the convexity of the underlying loss function and are generally accurate even across difficult settings where model changes are fairly large such as estimating group influences. Influence functions, however, are not well-understood in the context of deep learning with non-convex loss functions.  In this paper, we provide a comprehensive and large-scale empirical study of successes and failures of influence functions in neural network models trained on datasets such as Iris, MNIST, CIFAR-10 and ImageNet. Through our extensive experiments, we show that the network architecture, its depth and width, as well as the extent of model parameterization and regularization techniques have strong effects in the accuracy of influence functions. In particular, we find that (i) influence estimates are fairly accurate for shallow networks, while for deeper networks the estimates are often erroneous; (ii) for certain network architectures and datasets, training with weight-decay regularization is important to get high-quality influence estimates; and (iii) the accuracy of influence estimates can vary significantly depending on the examined test points. These results suggest that in general influence functions in deep learning are fragile and call for developing improved influence estimation methods to mitigate these issues in non-convex setups.
+<br><br>
+
+<!--
+<details><summary><b>Notes</b></summary>TEXT
+<br><br></details>
+-->
+
+<details><summary><b>Bibtex</b></summary>
+{% raw %}
+<pre><code>@inproceedings{
+basu2021influence,
+title={Influence Functions in Deep Learning Are Fragile},
+author={Samyadeep Basu and Phil Pope and Soheil Feizi},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=xHKVVHGDOEk}
+}</code></pre>
+{% endraw %}
+</details>
+</blockquote>
+</details>
+
+
 ### 2020
 <a id="2020-influence"></a>
 <details><summary><b>Estimating Training Data Influence by Tracing Gradient Descent</b> 

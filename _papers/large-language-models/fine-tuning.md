@@ -2,10 +2,37 @@
 layout: default
 title: Fine-tuning 
 parent: Large Language Models
-nav_order: 1
+nav_order: 2
 ---
 
 ### 2023
+<details><summary><b>An Emulator for Fine-Tuning Large Language Models using Small Language Models</b> <br>
+&emsp;<i>Eric Mitchell, Rafael Rafailov, Archit Sharma, Chelsea Finn, Christopher D. Manning</i><br>
+&emsp;<i>arXiv, 2023</i>
+<br>&emsp;
+[<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2310.12962">Paper</a>]
+<br><br></summary>
+
+<blockquote> <b>Abstract:</b> Widely used language models (LMs) are typically built by scaling up a two-stage training pipeline: a pre-training stage that uses a very large, diverse dataset of text and a fine-tuning (sometimes, 'alignment') stage that uses targeted examples or other specifications of desired behaviors. While it has been hypothesized that knowledge and skills come from pre-training, and fine-tuning mostly filters this knowledge and skillset, this intuition has not been extensively tested. To aid in doing so, we introduce a novel technique for decoupling the knowledge and skills gained in these two stages, enabling a direct answer to the question, "What would happen if we combined the knowledge learned by a large model during pre-training with the knowledge learned by a small model during fine-tuning (or vice versa)?" Using an RL-based framework derived from recent developments in learning from human preferences, we introduce emulated fine-tuning (EFT), a principled and practical method for sampling from a distribution that approximates (or 'emulates') the result of pre-training and fine-tuning at different scales. Our experiments with EFT show that scaling up fine-tuning tends to improve helpfulness, while scaling up pre-training tends to improve factuality. Beyond decoupling scale, we show that EFT enables test-time adjustment of competing behavioral traits like helpfulness and harmlessness without additional training. Finally, a special case of emulated fine-tuning, which we call LM up-scaling, avoids resource-intensive fine-tuning of large pre-trained models by ensembling them with small fine-tuned models, essentially emulating the result of fine-tuning the large pre-trained model. Up-scaling consistently improves helpfulness and factuality of instruction-following models in the Llama, Llama-2, and Falcon families, without additional hyperparameters or training.
+<br><br>
+
+<!--
+<details><summary><b>Notes</b></summary>TEXT
+<br><br></details>
+-->
+
+<details><summary><b>Bibtex</b></summary>
+{% raw %}
+<pre><code> @article{mitchell2023emulator,
+  title={An Emulator for Fine-Tuning Large Language Models using Small Language Models},
+  author={Mitchell, Eric and Rafailov, Rafael and Sharma, Archit and Finn, Chelsea and Manning, Christopher D},
+  journal={arXiv preprint arXiv:2310.12962},
+  year={2023}
+}</code></pre>
+{% endraw %}
+</details>
+
+</blockquote></details>
 
 <details><summary><b>LIMA: Less Is More for Alignment</b> 
 <br>
@@ -35,38 +62,6 @@ nav_order: 1
   year={2023}
 }
 </code></pre>
-{% endraw %}
-</details>
-</blockquote>
-</details>
-
-<details><summary><b>The False Promise of Imitating Proprietary LLMs</b> 
-<br>
-&emsp;<i>Arnav Gudibande, Eric Wallace, Charlie Snell, Xinyang Geng, Hao Liu, Pieter Abbeel, Sergey Levine, Dawn Song</i>
-<br>
-&emsp;<i>arXiv, 2023</i>
-<br>&emsp;
-[<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2305.15717">Paper</a>]
-[<a target="_blank" rel="noopener noreferrer" href="https://github.com/young-geng/EasyLM">Code</a>]
-<br>
-<br>
-</summary>
-  <blockquote> <b>Abstract:</b> An emerging method to cheaply improve a weaker language model is to finetune it on outputs from a stronger model, such as a proprietary system like ChatGPT (e.g., Alpaca, Self-Instruct, and others). This approach looks to cheaply imitate the proprietary model's capabilities using a weaker open-source model. In this work, we critically analyze this approach. We first finetune a series of LMs that imitate ChatGPT using varying base model sizes (1.5B--13B), data sources, and imitation data amounts (0.3M--150M tokens). We then evaluate the models using crowd raters and canonical NLP benchmarks. Initially, we were surprised by the output quality of our imitation models -- they appear far better at following instructions, and crowd workers rate their outputs as competitive with ChatGPT. However, when conducting more targeted automatic evaluations, we find that imitation models close little to none of the gap from the base LM to ChatGPT on tasks that are not heavily supported in the imitation data. We show that these performance discrepancies may slip past human raters because imitation models are adept at mimicking ChatGPT's style but not its factuality. Overall, we conclude that model imitation is a false promise: there exists a substantial capabilities gap between open and closed LMs that, with current methods, can only be bridged using an unwieldy amount of imitation data or by using more capable base LMs. In turn, we argue that the highest leverage action for improving open-source models is to tackle the difficult challenge of developing better base LMs, rather than taking the shortcut of imitating proprietary systems.
-<br><br>
-
-<!--
-<details><summary><b>Notes</b></summary>TEXT
-<br><br></details>
--->
-
-<details><summary><b>Bibtex</b></summary>
-{% raw %}
-<pre><code> @article{gudibande2023false,
-  title={The false promise of imitating proprietary llms},
-  author={Gudibande, Arnav and Wallace, Eric and Snell, Charlie and Geng, Xinyang and Liu, Hao and Abbeel, Pieter and Levine, Sergey and Song, Dawn},
-  journal={arXiv preprint arXiv:2305.15717},
-  year={2023}
-}</code></pre>
 {% endraw %}
 </details>
 </blockquote>

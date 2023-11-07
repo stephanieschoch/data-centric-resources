@@ -25,9 +25,100 @@ nav_order: 2
 
 
 ### 2023
-
-
 <a id="2023-shapley"></a>
+
+<details><summary><b>Threshold KNN-Shapley: A Linear-Time and Privacy-Friendly Approach to Data Valuation</b> <br>
+&emsp;<i>Jiachen T. Wang, Yuqing Zhu, Yu-Xiang Wang, Ruoxi Jia, Prateek Mittal</i><br>
+&emsp;<i>Advances in Neural Information Processing Systems (NeurIPS), 2023</i><br>&emsp;
+[<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2308.15709">Paper</a>]
+<br><br></summary>
+
+<blockquote> <b>Abstract:</b> Data valuation, a critical aspect of data-centric ML research, aims to quantify the usefulness of individual data sources in training machine learning (ML) models. However, data valuation faces significant yet frequently overlooked privacy challenges despite its importance. This paper studies these challenges with a focus on KNN-Shapley, one of the most practical data valuation methods nowadays. We first emphasize the inherent privacy risks of KNN-Shapley, and demonstrate the significant technical difficulties in adapting KNN-Shapley to accommodate differential privacy (DP). To overcome these challenges, we introduce TKNN-Shapley, a refined variant of KNN-Shapley that is privacy-friendly, allowing for straightforward modifications to incorporate DP guarantee (DP-TKNN-Shapley). We show that DP-TKNN-Shapley has several advantages and offers a superior privacy-utility tradeoff compared to naively privatized KNN-Shapley in discerning data quality. Moreover, even non-private TKNN-Shapley achieves comparable performance as KNN-Shapley. Overall, our findings suggest that TKNN-Shapley is a promising alternative to KNN-Shapley, particularly for real-world applications involving sensitive data.
+<br><br>
+
+<!--
+<details><summary><b>Notes</b></summary>TEXT
+<br><br></details>
+-->
+
+<details><summary><b>Bibtex</b></summary>
+{% raw %}
+<pre><code> @article{wang2023threshold,
+  title={Threshold KNN-Shapley: A Linear-Time and Privacy-Friendly Approach to Data Valuation},
+  author={Wang, Jiachen T and Zhu, Yuqing and Wang, Yu-Xiang and Jia, Ruoxi and Mittal, Prateek},
+  journal={arXiv preprint arXiv:2308.15709},
+  year={2023}
+} </code></pre>
+{% endraw %}
+</details>
+</blockquote></details>
+
+
+<details><summary><b>2D-Shapley: A Framework for Fragmented Data Valuation</b> <br>
+&emsp;<i>Zhihong Liu, Hoang Anh Just, Xiangyu Chang, Xi Chen, Ruoxi Jia</i><br>
+&emsp;<i>Proceedings of the 40th International Conference on Machine Learning (ICML), 2023</i><br>&emsp;
+[<a target="_blank" rel="noopener noreferrer" href="https://proceedings.mlr.press/v202/liu23s">Paper</a>]
+<br><br></summary>
+
+<blockquote> <b>Abstract:</b> Data valuation -- quantifying the contribution of individual data sources to certain predictive behaviors of a model -- is of great importance to enhancing the transparency of machine learning and designing incentive systems for data sharing. Existing work has focused on evaluating data sources with the shared feature or sample space. How to valuate fragmented data sources of which each only contains partial features and samples remains an open question. We start by presenting a method to calculate the counterfactual of removing a fragment from the aggregated data matrix. Based on the counterfactual calculation, we further propose 2D-Shapley, a theoretical framework for fragmented data valuation that uniquely satisfies some appealing axioms in the fragmented data context. 2D-Shapley empowers a range of new use cases, such as selecting useful data fragments, providing interpretation for sample-wise data values, and fine-grained data issue diagnosis.
+<br><br>
+
+<!--
+<details><summary><b>Notes</b></summary>TEXT
+<br><br></details>
+-->
+
+<details><summary><b>Bibtex</b></summary>
+{% raw %}
+<pre><code> 
+@InProceedings{pmlr-v202-liu23s,
+  title = 	 {2{D}-Shapley: A Framework for Fragmented Data Valuation},
+  author =       {Liu, Zhihong and Just, Hoang Anh and Chang, Xiangyu and Chen, Xi and Jia, Ruoxi},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {21730--21755},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--29 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/liu23s/liu23s.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/liu23s.html}
+} </code></pre>
+{% endraw %}
+</details>
+
+</blockquote></details>
+
+
+<details><summary><b>Variance reduced Shapley value estimation for trustworthy data valuation</b> <br>
+&emsp;<i>Mengmeng Wu, Ruoxi Jia, Changle Lin, Wei Huang, Xiangyu Chang</i><br>
+&emsp;<i>Computers & Operations Research, 2023</i><br>&emsp;
+[<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2210.16835.pdf">Paper</a>]
+<br><br></summary>
+
+<blockquote> <b>Abstract:</b> Data valuation, especially quantifying data value in algorithmic prediction and decision-making, is a fundamental problem in data trading scenarios. The most widely used method is to define the data Shapley and approximate it by means of the permutation sampling algorithm. To make up for the large estimation variance of the permutation sampling that hinders the development of the data marketplace, we propose a more robust data valuation method using stratified sampling, named variance reduced data Shapley (VRDS for short). We theoretically show how to stratify, how many samples are taken at each stratum, and the sample complexity analysis of VRDS. Finally, the effectiveness of VRDS is illustrated in different types of datasets and data removal applications.
+<br><br>
+
+<!--
+<details><summary><b>Notes</b></summary>TEXT
+<br><br></details>
+-->
+
+<details><summary><b>Bibtex</b></summary>
+{% raw %}
+<pre><code> @article{wu2023variance,
+  title={Variance reduced shapley value estimation for trustworthy data valuation},
+  author={Wu, Mengmeng and Jia, Ruoxi and Lin, Changle and Huang, Wei and Chang, Xiangyu},
+  journal={Computers \& Operations Research},
+  pages={106305},
+  year={2023},
+  publisher={Elsevier}
+} </code></pre>
+{% endraw %}
+</details>
+
+</blockquote></details>
 
 ### 2022
 <a id="2022-shapley"></a>
@@ -328,6 +419,7 @@ url={https://openreview.net/forum?id=KTOcrOR5mQ9}
 &emsp;<i>Proceedings of the Twenty-Second International Conference on Artificial Intelligence and Statistics (AISTATS), 2019</i>
 <br>&emsp;
 [<a target="_blank" rel="noopener noreferrer" href="https://proceedings.mlr.press/v89/jia19a.html">Paper</a>]
+[<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2302.11431">Technical Note</a>]
 <br>
 <br>
 </summary>

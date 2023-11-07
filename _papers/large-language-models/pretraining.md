@@ -2,10 +2,10 @@
 layout: default
 title: Pretraining
 parent: Large Language Models
-nav_order: 2
+nav_order: 3
 ---
 
-## Pretraininig Data
+## Pretraining Data
 
 <details><summary><b>Detecting Pretraining Data from Large Language Models</b> 
 <br>
