@@ -89,3 +89,34 @@ nav_order: 3
 </details>
 </blockquote>
 </details>
+
+
+### 2020
+
+<details><summary><b>A Principled Approach to Data Valuation for Federated Learning</b> <br>
+&emsp;<i>Tianhao Wang, Johannes Rausch, Ce Zhang, Ruoxi Jia, Dawn Song</i><br>
+&emsp;<i>Federated Learning: Privacy and Incentive, 2020</i><br>&emsp;
+[<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2009.06192">Paper</a>]
+<br><br></summary>
+
+<blockquote> <b>Abstract:</b> Federated learning (FL) is a popular technique to train machine learning (ML) models on decentralized data sources. In order to sustain long-term participation of data owners, it is important to fairly appraise each data source and compensate data owners for their contribution to the training process. The Shapley value (SV) defines a unique payoff scheme that satisfies many desiderata for a data value notion. It has been increasingly used for valuing training data in centralized learning. However, computing the SV requires exhaustively evaluating the model performance on every subset of data sources, which incurs prohibitive communication cost in the federated setting. Besides, the canonical SV ignores the order of data sources during training, which conflicts with the sequential nature of FL. This paper proposes a variant of the SV amenable to FL, which we call the federated Shapley value. The federated SV preserves the desirable properties of the canonical SV while it can be calculated without incurring extra communication cost and is also able to capture the effect of participation order on data value. We conduct a thorough empirical study of the federated SV on a range of tasks, including noisy label detection, adversarial participant detection, and data summarization on different benchmark datasets, and demonstrate that it can reflect the real utility of data sources for FL and has the potential to enhance system robustness, security, and efficiency. We also report and analyze "failure cases" and hope to stimulate future research.
+<br><br>
+
+<!--
+<details><summary><b>Notes</b></summary>TEXT
+<br><br></details>
+-->
+
+<details><summary><b>Bibtex</b></summary>
+{% raw %}
+<pre><code> @article{wang2020principled,
+  title={A principled approach to data valuation for federated learning},
+  author={Wang, Tianhao and Rausch, Johannes and Zhang, Ce and Jia, Ruoxi and Song, Dawn},
+  journal={Federated Learning: Privacy and Incentive},
+  pages={153--167},
+  year={2020},
+  publisher={Springer}
+} </code></pre>
+{% endraw %}
+</details>
+</blockquote></details>

@@ -7,12 +7,12 @@ nav_order: 2
 ---
 
 ## Shapley-based Methods for Data Contribution Estimation
+<!--
 {: .no_toc }
 
-<!--
 ## Table of contents
 {: .no_toc .text-delta }
--->
+
 
 <details open markdown="block">
   <summary>
@@ -21,7 +21,9 @@ nav_order: 2
   {: .text-delta }
 - TOC
 {:toc}
+
 </details>
+-->
 
 
 ### 2023

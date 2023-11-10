@@ -7,21 +7,6 @@ nav_order: 2
 ---
 
 ## Other Methods for Data Contribution Estimation
-{: .no_toc }
-
-<!--
-## Table of contents
-{: .no_toc .text-delta }
--->
-
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
-- TOC
-{:toc}
-</details>
 
 ### 2023
 
@@ -205,7 +190,7 @@ url={https://openreview.net/forum?id=XIzO8zr-WbM}
 &emsp;<i>Tom Yan, Ariel D. Procaccia</i><br>
 &emsp;<i>Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 2021</i><br>&emsp;
 [<a target="_blank" rel="noopener noreferrer" href="https://cdn.aaai.org/ojs/16721/16721-13-20215-1-2-20210518.pdf">Paper</a>]
-[<a target="_blank" rel="noopener noreferrer" href="">Code</a>]
+[<a target="_blank" rel="noopener noreferrer" href="https://slideslive.com/38949225/if-you-like-shapley-then-youll-love-the-core">Talk</a>]
 <br><br></summary>
 
 <blockquote> <b>Abstract:</b> The prevalent approach to problems of credit assignment in machine learning — such as feature and data valuation— is to model the problem at hand as a cooperative game and apply the Shapley value. But cooperative game theory offers a rich menu of alternative solution concepts, which famously includes the core and its variants. Our goal is to challenge the machine learning community’s current consensus around the Shapley value, and make a case for the core as a viable alternative. To that end, we prove that arbitrarily good approximations to the least core — a core relaxation that is always feasible — can be computed efficiently (but prove an impossibility for a more refined solution concept, the nucleolus). We also perform experiments that corroborate these theoretical results and shed light on settings where the least core maybe preferable to the Shapley value.

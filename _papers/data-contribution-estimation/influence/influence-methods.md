@@ -7,12 +7,11 @@ nav_order: 2
 ---
 
 ## Influence-based Methods for Data Contribution Estimation
+<!--
 {: .no_toc }
 
-<!--
 ## Table of contents
 {: .no_toc .text-delta }
--->
 
 <details open markdown="block">
   <summary>
@@ -22,12 +21,72 @@ nav_order: 2
 - TOC
 {:toc}
 </details>
-
+-->
 
 ### 2023
 
+<details><summary><b>Revisiting the Fragility of Influence Functions</b> <br>
+&emsp;<i>Jacob R. Epifano, Ravi P. Ramachandran, Aaron J. Masino, Ghulam Rasool</i><br>
+&emsp;<i>Neural Networks, 2023</i><br>&emsp;
+[<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2303.12922">Paper</a>]
+[<a target="_blank" rel="noopener noreferrer" href="https://github.com/jrepifano/xai_is_fragile">Code</a>]
+<br><br></summary>
+
+<blockquote> <b>Abstract:</b> In the last few years, many works have tried to explain the predictions of deep learning models. Few methods, however, have been proposed to verify the accuracy or faithfulness of these explanations. Recently, influence functions, which is a method that approximates the effect that leave-one-out training has on the loss function, has been shown to be fragile. The proposed reason for their fragility remains unclear. Although previous work suggests the use of regularization to increase robustness, this does not hold in all cases. In this work, we seek to investigate the experiments performed in the prior work in an effort to understand the underlying mechanisms of influence function fragility. First, we verify influence functions using procedures from the literature under conditions where the convexity assumptions of influence functions are met. Then, we relax these assumptions and study the effects of non-convexity by using deeper models and more complex datasets. Here, we analyze the key metrics and procedures that are used to validate influence functions. Our results indicate that the validation procedures may cause the observed fragility.
+<br><br>
+
+<!--
+<details><summary><b>Notes</b></summary>TEXT
+<br><br></details>
+-->
+
+<details><summary><b>Bibtex</b></summary>
+{% raw %}
+<pre><code> @article{epifano2023revisiting,
+  title={Revisiting the fragility of influence functions},
+  author={Epifano, Jacob R and Ramachandran, Ravi P and Masino, Aaron J and Rasool, Ghulam},
+  journal={Neural Networks},
+  volume={162},
+  pages={581--588},
+  year={2023},
+  publisher={Elsevier}
+} </code></pre>
+{% endraw %}
+</details>
+</blockquote></details>
+
 
 ### 2022
+
+<details><summary><b>If Influence Functions are the Answer, Then What is the Question?</b> <br>
+&emsp;<i>Juhan Bae, Nathan Hoyen Ng, Alston Lo, Marzyeh Ghassemi, Roger Baker Grosse</i><br>
+&emsp;<i>Advances in Neural Information Processing Systems (NeurIPS), 2022</i><br>&emsp;
+[<a target="_blank" rel="noopener noreferrer" href="https://openreview.net/forum?id=hzbguA9zMJ">Paper</a>]
+[<a target="_blank" rel="noopener noreferrer" href="https://github.com/alstonlo/torch-influence">Code</a>]
+<br><br></summary>
+
+<blockquote> <b>Abstract:</b> Influence functions efficiently estimate the effect of removing a single training data point on a model's learned parameters. While influence estimates align well with leave-one-out retraining for linear models, recent works have shown this alignment is often poor in neural networks. In this work, we investigate the specific factors that cause this discrepancy by decomposing it into five separate terms. We study the contributions of each term on a variety of architectures and datasets and how they vary with factors such as network width and training time. While practical influence function estimates may be a poor match to leave-one-out retraining for nonlinear networks, we show that they are often a good approximation to a different object we term the proximal Bregman response function (PBRF). Since the PBRF can still be used to answer many of the questions motivating influence functions, such as identifying influential or mislabeled examples, our results suggest that current algorithms for influence function estimation give more informative results than previous error analyses would suggest.
+<br><br>
+
+<!--
+<details><summary><b>Notes</b></summary>TEXT
+<br><br></details>
+-->
+
+<details><summary><b>Bibtex</b></summary>
+{% raw %}
+<pre><code> @inproceedings{
+bae2022if,
+title={If Influence Functions are the Answer, Then What is the Question?},
+author={Juhan Bae and Nathan Hoyen Ng and Alston Lo and Marzyeh Ghassemi and Roger Baker Grosse},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=hzbguA9zMJ}
+} </code></pre>
+{% endraw %}
+</details>
+</blockquote></details>
 
 
 ### 2021

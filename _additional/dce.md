@@ -26,6 +26,11 @@ nav_order: 1
 [<a target="_blank" rel="noopener noreferrer" href="https://pypi.org/project/valda/">PyPi Link</a>]
 [<a target="_blank" rel="noopener noreferrer" href="https://colab.research.google.com/drive/1agsMNqZan-3RnJLQtBGATRHHWYMe7C9H?usp=sharing">Tutorial</a>]
 
+**pyDVL** \
+*A library of stable implementations of algorithms for data valuation and influence function computation* \
+[<a target="_blank" rel="noopener noreferrer" href="https://pydvl.org/0.7.1/">Website</a>]
+[<a target="_blank" rel="noopener noreferrer" href="https://github.com/aai-institute/pyDVL">Repository</a>]
+
 
 ## Datasets and Benchmarks
 

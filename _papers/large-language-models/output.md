@@ -7,7 +7,7 @@ nav_order: 4
 
 # Large Language Model Outputs
 
-Contains papers related to analyzing, evaluating, and utilizing outputs from Large Language Models. 
+Contains papers related to analyzing and utilizing outputs from Large Language Models. 
 
 <!--
 For papers related to using LLM outputs for further training (e.g. imitation models), see fine-tuning.
